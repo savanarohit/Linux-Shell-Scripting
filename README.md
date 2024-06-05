@@ -26,6 +26,8 @@ Step4: Executing Bash Shell Script
 
 ### Simple User Creation Script
 
+```
+
 #!/bin/bash
 
 # Check if the script is run as root
@@ -47,7 +49,7 @@ useradd -m -s /bin/bash "$username"
 # Confirm if the user was created
 echo "User $username has been created."
 
-
+```
 
 
 
