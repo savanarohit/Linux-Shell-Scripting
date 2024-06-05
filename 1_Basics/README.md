@@ -4,8 +4,8 @@ Linux shell scripting is a way to automate tasks in the Unix/Linux environment. 
 
 ### Why use Shell Scripts?
 
-Automation 
-Efficiency
-Customization
-Reusability
+1) Automation 
+2) Efficiency
+3) Customization
+4) Reusability
 
