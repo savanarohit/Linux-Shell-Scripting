@@ -1,11 +1,9 @@
-### Linux Shell Scripting Basics
 
-Linux shell scripting is a way to automate tasks in the Unix/Linux environment. A shell script is a text file containing a sequence of commands for a Unix-based operating system's shell to execute.
+### Components of a Shell Script
 
-### Why use Shell Scripts?
-
-1) Automation 
-2) Efficiency
-3) Customization
-4) Reusability
-
+1) Shebang (#!)
+2) Comments
+3) Variables
+4) Control Flow (if-else, loops)
+5) Functions
+6) Input and Output
