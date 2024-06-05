@@ -1,5 +1,5 @@
 
-### Components of a Shell Script
+### Components of a Linux Shell Script
 
 1) Shebang (#!)
 2) Comments
