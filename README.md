@@ -52,6 +52,7 @@ echo "User $username has been created."
 ```
 
 ### Steps to Execute the Script
+
 1) Save the Script: Save the script to a file, e.g., create_user.sh.
 2) Make the Script Executable: Run chmod +x create_user.sh.
 3) Execute the Script with Root Privileges: Run sudo ./create_user.sh.
