@@ -8,15 +8,10 @@
 #### Single-Line Comments
 '
 # This is a single-line comment
-echo "Hello, World!"  # This prints Hello, World! to the terminal
-
 '
 
 #### Multi-Line Comments
 '
-# This is a multi-line comment
-# It can be used to explain more complex sections of code
-# or provide detailed information
 echo "Multi-line comment example"
 '
 
