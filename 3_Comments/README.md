@@ -7,11 +7,11 @@
 
 #### Single-Line Comments
 '
-# This is a single-line comment
+Use # for single line comment
 '
 
 #### Multi-Line Comments
 '
-echo "Multi-line comment example"
+Use # for multi-line comment
 '
 
