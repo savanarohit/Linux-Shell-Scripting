@@ -75,21 +75,23 @@ nixmin@DESKTOP:~$ if "1>2"; then echo "1"; else echo "2"; fi 2>/dev/null
 
 1) Test File Attributes
 
-File exists
 ```
+File exists
+
 nixmin@DESKTOP:~$ test -e /etc/passwd && echo "YES" || echo "NO"
 YES
 ```
 
+```
 If a file is regular file
 
-```
 nixmin@DESKTOP:~$ test -f /etc/passwd && echo "YES" || echo "NO"
 YES
 ```
 
-If a dir exists
 ```
+If a dir exists
+
 nixmin@DESKTOP:~$ test -d /etct && echo "YES" || echo "NO"
 NO
 ```
