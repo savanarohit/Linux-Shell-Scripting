@@ -42,7 +42,7 @@ We want to print the third field (salary).
 awk '{ print $3 }' data.txt
 
 
-##### Example - Search for a username
+#### Example - Search for a username
 '
 nixmin@DESKTOP:~$ awk '/root/ {print $1}' /etc/passwd
 root:x:0:0:root:/root:/bin/bash
@@ -53,7 +53,7 @@ proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
 systemd-timesync:x:103:106:systemd
 '
 
-##### Example - Get all the usernames
+#### Example - Get all the usernames
 
 nixmin@DESKTOP:~$ awk -F ":" '{print $1}' /etc/passwd
 root
