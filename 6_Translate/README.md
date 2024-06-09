@@ -70,8 +70,6 @@ nixmin@DESKTOP:~$ cat data.txt | tr -d 'Amit'
 Rohit Amit
 nixmin@DESKTOP:~$
 Roh
-
-
 ```
 
 
