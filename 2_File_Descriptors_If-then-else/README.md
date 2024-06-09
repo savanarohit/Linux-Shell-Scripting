@@ -5,33 +5,33 @@ Standard Output         1
 Standard Error          2
 
 #### Example of Standard input 
-'
+```
 When a file exists
 
 nixmin@DESKTOP:$ cat file1
 Hello
 nixmin@DESKTOP:$ cat >&1 file1
 Hello
-'
+```
 
 #### Example of standard error
-'
+```
 When a file does not exists
 
 nixmin@DESKTOP:~$ cat nofile
 cat: nofile: No such file or directory
-'
+```
 
 #### Redirection of standard errors
-'
+```
 When a file does not exists
 
 nixmin@DESKTOP:~$ cat nofile 2>/dev/null
 nixmin@DESKTOP:~$
-'
+```
 
 ### Power Parse
-'
+```
 Passing file as input to a command
 
 nixmin@DESKTOP:~$ cat /etc/passwd > file3
@@ -40,10 +40,10 @@ nixmin@DESKTOP:~$ cat file3
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
-'
+```
 
 #### Print errors and redirect to standard out
-'
+```
 Get standard output and also redirect to a file
 
 nixmin@DESKTOP:~$ cat /etc/passwd | tee file4
@@ -52,10 +52,10 @@ daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
 sys:x:3:3:sys:/dev:/usr/sbin/nologin
 sync:x:4:65534:sync:/bin:/bin/sync
-'
+```
 
 #### Comparison Operators
-'
+```
 nixmin@DESKTOP:~$ if "1>2"
 > then
 > echo "1"
@@ -69,7 +69,7 @@ Using Comparison operators and also redirecting standard errors
 
 nixmin@DESKTOP:~$ if "1>2"; then echo "1"; else echo "2"; fi 2>/dev/null
 2
-'
+```
 
 
 #### Test command
@@ -179,7 +179,7 @@ test -d /path/to/directory -a -n "$string" && echo "Directory exists and string 
 
 
 #### Example script to check if a file exists or not
-'
+```
 #!/bin/bash
 if [[ -e "/etc/passwd" ]];
 then
@@ -187,23 +187,23 @@ then
 else
         echo "File not found"
 fi
-'
+```
 Output
 
-'
+```
 nixmin@DESKTOP:~$ ./file_check.sh
 passwd file exists
-'
+```
 
 #### Command line parameters 
-'
+```
 #!/bin/bash
 if [[ -z "$1" ]]; 
 then
     echo "Please provide parameter"
 else
     echo "Thanks"
-'
+```
 
 Output
 

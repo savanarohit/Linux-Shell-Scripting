@@ -14,7 +14,7 @@ cut OPTION [FILE...]
 -b, --bytes=LIST : Select only these bytes.
 
 #### Examples 
-'
+```
 nixmin@DESKTOP:~$ cat /etc/passwd | cut -d ":" -f 1
 root
 daemon
@@ -25,9 +25,9 @@ games
 man
 lp
 mail
-,
+```
 
-'
+```
 nixmin@DESKTOP:~$ cat /etc/passwd | cut -d ":" -f 6
 /root
 /usr/sbin
@@ -43,13 +43,13 @@ nixmin@DESKTOP:~$ cat /etc/passwd | cut -d ":" -f 6
 /bin
 /var/www
 /var/backups
-'
+```
 
-'
+```
 nixmin@DESKTOP:~$ httpd -v | cut -d "/" -f 2
 2.4.6 (CentOS)
 Server build: Jan 25 2024
-'
+```
 
 
 

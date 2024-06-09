@@ -6,12 +6,12 @@
 4) Use Comments to Explain Why: Rather than explaining what the code does, focus on explaining why a certain approach was taken.
 
 #### Single-Line Comments
-'
+```
 Use # for single line comment
-'
+```
 
 #### Multi-Line Comments
-'
+```
 Use # for multi-line comment
-'
+```
 
