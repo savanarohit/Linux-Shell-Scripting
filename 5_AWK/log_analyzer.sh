@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script for eb Server Log Analysis
+# Script for Web Server Log Analysis
 
 # Log File
 log_file="/var/log/apache2/access.log"
