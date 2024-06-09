@@ -39,11 +39,22 @@ Example: Replace multiple spaces with a single space.
 echo "This    is  a   sentence." | tr -s ' '
 ```
 
-#### Example - 
+#### Example - transalate from lowercase to uppercase
+```
+nixmin@DESKTOP-:~$ cat /etc/passwd | tr 'r' 'R'
+Root:x:0:0:Root:/Root:/bin/bash
+daemon:x:1:1:daemon:/usR/sbin:/usR/sbin/nologin
+```
 
 
-
-
+#### Example - transalate spaces to underscore
+```
+nixmin@DESKTOP:~$ tr ' ' '_' < /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+```
 
 
 
