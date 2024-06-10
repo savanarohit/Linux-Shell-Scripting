@@ -15,7 +15,5 @@ greet() {
 
 # Call the function with a parameter
 greet "Alice"
-greet "Bob"
 
-# End of the script
 ```
