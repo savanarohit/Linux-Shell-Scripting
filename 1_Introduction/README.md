@@ -39,8 +39,10 @@ mkdir {1..4}_
 
 #### List of Users  
 
+```
 cat /etc/passwd
 cat /etc/passwd | awk -F ":" '{print $1}'
+```
 
 #### Output of a command to set a Variable
 ```
