@@ -43,7 +43,7 @@ cat /etc/passwd
 cat /etc/passwd | awk -F ":" '{print $1}'
 ```
 
-#### Output of a command to set a Variable
+#### Output redirection to set a variable
 ```
 user=$(cat /etc/passwd | awk -F ":" '{print $1}')
 
