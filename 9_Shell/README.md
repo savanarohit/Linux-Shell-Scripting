@@ -157,7 +157,7 @@ LOGNAME=nixmin
 
 nixmin@DESKTOP:~$ cat /etc/passwd
 nixmin@DESKTOP:~$ grep "root" /etc/passwd
-nixmin@DESKTOP:~$ sed 
-nixmin@DESKTOP:~$ awk 
-nixmin@DESKTOP:~$ 
+nixmin@DESKTOP:~$ sed 's/apple/oragne/' fruits.txt
+nixmin@DESKTOP:~$ set 's/apple/oragne/g' fruits.txt
+nixmin@DESKTOP:~$ cat /etc/passwd | awk -F ":" '{print $NF}'
 
