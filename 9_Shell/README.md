@@ -102,16 +102,12 @@ source
 pwd
 history
 
-#### How to List Built-in Commands
+#### How to List all the Built-in Commands
 
 Most shells provide a way to list all available built-in commands. For example:
 Bash: You can use the help command to list built-ins, or compgen -b to get a concise list of all built-ins.
 
 ```
-nixmin@DESKTOP-GINCH92:~$ help 
-
-We can use also use compgen -b command
-
 nixmin@DESKTOP:~$ compgen -b
 .
 :
