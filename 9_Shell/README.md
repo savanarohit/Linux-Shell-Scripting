@@ -161,3 +161,14 @@ nixmin@DESKTOP:~$ sed 's/apple/oragne/' fruits.txt
 nixmin@DESKTOP:~$ set 's/apple/oragne/g' fruits.txt
 nixmin@DESKTOP:~$ cat /etc/passwd | awk -F ":" '{print $NF}'
 ```
+
+#### Local Variable 
+```
+#!/bin/bash
+# Script for local variables
+hello() {
+       name="Rohit"
+       eho "$name"
+}
+
+```
