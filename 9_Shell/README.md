@@ -133,5 +133,31 @@ nixmin@DESKTOP:~$ type df
 df is /usr/bin/df
 ```
 
+#### Linux Shell Varirables
+```
+nixmin@DESKTOP:~$ echo $SHELL
+/bin/bash
 
+nixmin@DESKTOP:~$ echo $HOME
+/root
+
+nixmin@DESKTOP:~$ cd $HOME
+
+```
+
+#### Linux Shell Environmen Variables
+```
+nixmin@DESKTOP:~/linux-shell-scripting$ env
+SHELL=/bin/bash
+NAME=DESKTOP
+LOGNAME=nixmin
+```
+
+#### Useful Linux Shell Commands
+
+nixmin@DESKTOP:~$ cat /etc/passwd
+nixmin@DESKTOP:~$ grep "root" /etc/passwd
+nixmin@DESKTOP:~$ sed 
+nixmin@DESKTOP:~$ awk 
+nixmin@DESKTOP:~$ 
 
