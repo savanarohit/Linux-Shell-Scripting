@@ -1,4 +1,4 @@
-#### Shell
+#### Linux Shell
 
 The Linux shell is a command-line interface (CLI) that allows users to interact with the operating system by typing commands. It provides a text-based way to communicate with the Linux kernel and manage system resources, run programs, and perform various tasks.
 
@@ -42,7 +42,7 @@ The Linux shell is a command-line interface (CLI) that allows users to interact 
 
 4) cp: Copies files or directories.
 
-#### How to get help
+#### How to get help in linux shell
 
 ```
 nixmin@DESKTOP:~$ man ls
