@@ -42,7 +42,7 @@ The Linux shell is a command-line interface (CLI) that allows users to interact 
 
 4) cp: Copies files or directories.
 
-#### How to get help in linux shell
+#### How to get help in Linux shell
 
 ```
 nixmin@DESKTOP:~$ man ls
