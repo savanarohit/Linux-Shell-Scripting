@@ -154,10 +154,10 @@ LOGNAME=nixmin
 ```
 
 #### Useful Linux Shell Commands
-
+```
 nixmin@DESKTOP:~$ cat /etc/passwd
 nixmin@DESKTOP:~$ grep "root" /etc/passwd
 nixmin@DESKTOP:~$ sed 's/apple/oragne/' fruits.txt
 nixmin@DESKTOP:~$ set 's/apple/oragne/g' fruits.txt
 nixmin@DESKTOP:~$ cat /etc/passwd | awk -F ":" '{print $NF}'
-
+```
