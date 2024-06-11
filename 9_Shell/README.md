@@ -66,3 +66,60 @@ DESCRIPTION
               do not list implied . and ..
 
 ```
+
+#### Linux Shell Built-in commands
+
+Shell built-in commands are integral components of the shell environment that allow users to perform essential operations without invoking external programs or commands.
+
+#### Key Characteristics of Shell Built-in Commands
+
+1) Internal Execution:
+
+Built-in commands are executed by the shell itself rather than spawning a new process. This makes them faster than external commands because no additional overhead is required to create a new process.
+
+2) Access to Shell's Internal State:
+
+They can manipulate the shell's environment and internal variables directly. This includes operations like setting environment variables, changing directories, and altering the shell's behavior.
+
+3) Essential for Shell Functionality:
+
+Some tasks can only be performed by built-ins. For example, changing the current directory (cd) or manipulating shell variables (export) are tasks that require direct access to the shell's internals.
+
+4) Command Availability:
+
+Built-in commands are always available in the shell, unlike external commands that might depend on the system's PATH or other configurations.
+
+#### Common Examples of Shell Built-in Commands
+
+cd 
+echo
+exit
+set
+unset
+export
+alias
+source
+pwd
+history
+
+#### How to List Built-in Commands
+
+Most shells provide a way to list all available built-in commands. For example:
+Bash: You can use the help command to list built-ins, or compgen -b to get a concise list of all built-ins.
+
+```
+nixmin@DESKTOP-GINCH92:~$ help 
+```
+
+#### How to know if a command is Built-in
+```
+We can use type command
+
+nixmin@DESKTOP:~$ type cd
+cd is a shell builtin
+
+nixmin@DESKTOP:~$ type df
+df is /usr/bin/df
+```
+
+
