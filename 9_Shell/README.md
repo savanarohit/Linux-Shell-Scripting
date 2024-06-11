@@ -122,4 +122,25 @@ nixmin@DESKTOP:~$ type df
 df is /usr/bin/df
 ```
 
+#### How to list all the Built-in commands
+```
+We can use compgen -b command
+
+nixmin@DESKTOP:~$ compgen -b
+.
+:
+[
+alias
+bg
+bind
+break
+builtin
+caller
+cd
+command
+compgen
+complete
+
+
+```
 
