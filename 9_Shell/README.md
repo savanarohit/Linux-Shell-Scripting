@@ -109,22 +109,8 @@ Bash: You can use the help command to list built-ins, or compgen -b to get a con
 
 ```
 nixmin@DESKTOP-GINCH92:~$ help 
-```
 
-#### How to know if a command is Built-in
-```
-We can use type command
-
-nixmin@DESKTOP:~$ type cd
-cd is a shell builtin
-
-nixmin@DESKTOP:~$ type df
-df is /usr/bin/df
-```
-
-#### How to list all the Built-in commands
-```
-We can use compgen -b command
+We can use also use compgen -b command
 
 nixmin@DESKTOP:~$ compgen -b
 .
@@ -138,9 +124,18 @@ builtin
 caller
 cd
 command
-compgen
-complete
-
-
 ```
+
+#### How to know if a command is Built-in
+```
+We can use type command
+
+nixmin@DESKTOP:~$ type cd
+cd is a shell builtin
+
+nixmin@DESKTOP:~$ type df
+df is /usr/bin/df
+```
+
+
 
