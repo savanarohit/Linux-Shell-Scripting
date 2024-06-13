@@ -8,6 +8,12 @@ Strings are a fundamental data type in Bash shell scripting, used to store and m
 nixmin@DESKTOP:~$ my_string="Hello Bash!"
 nixmin@DESKTOP:~$ echo my_string
 my_string
+```
+
+#### String 
+```
+
+
 
 ```
 
