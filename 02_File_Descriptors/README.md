@@ -1,8 +1,29 @@
 #### File Descriptors
 
-Standard Input          0
-Standard Output         1
-Standard Error          2
+File descriptors are a fundamental concept in Unix-like operating systems, including Linux. They provide an abstract way for applications to access and interact with files and other input/output resources.
+
+Standard File Descriptors
+There are three standard file descriptors that are commonly used:
+
+1) Standard Input (stdin):
+
+File Descriptor Number: 0
+Usage: Used for reading input. By default, it reads from the keyboard.
+Example: read line <&0 (reads input from standard input).
+
+2) Standard Output (stdout):
+
+File Descriptor Number: 1
+Usage: Used for writing output. By default, it writes to the terminal or console.
+Example: echo "Hello, World!" >&1 (writes output to standard output).
+
+3) Standard Error (stderr):
+
+File Descriptor Number: 2
+Usage: Used for writing error messages. By default, it writes to the terminal or console.
+Example: echo "An error occurred" >&2 (writes output to standard error).
+
+
 
 #### Example of Standard input 
 ```
