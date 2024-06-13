@@ -256,5 +256,7 @@ else
 
 Output
 
+```
 nixmin@DESKTOP:~$ ./parameter_check.sh TestParameter
 Thanks
+```
