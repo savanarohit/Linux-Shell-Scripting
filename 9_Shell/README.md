@@ -164,11 +164,15 @@ nixmin@DESKTOP:~$ cat /etc/passwd | awk -F ":" '{print $NF}'
 ```
 
 #### Local Variable
+```
+#!/bin/bash
+# Script explaining Local variables
+
 hello() {
        name="Rohit"
        eho "$name"
 }
 
-```
+
 
 
