@@ -133,7 +133,7 @@ nixmin@DESKTOP:~$ type df
 df is /usr/bin/df
 ```
 
-#### Linux Shell Varirables
+#### Predefined Linux Shell Varirables
 ```
 nixmin@DESKTOP:~$ echo $SHELL
 /bin/bash
@@ -141,7 +141,8 @@ nixmin@DESKTOP:~$ echo $SHELL
 nixmin@DESKTOP:~$ echo $HOME
 /root
 
-nixmin@DESKTOP:~$ cd $HOME
+nixmin@DESKTOP:/etc$ cd $HOME
+nixmin@DESKTOP:~$
 
 ```
 
@@ -172,3 +173,5 @@ hello() {
 }
 
 ```
+
+
