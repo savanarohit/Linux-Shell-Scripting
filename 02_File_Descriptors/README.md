@@ -237,9 +237,9 @@ else
         echo "File not found"
 fi
 ```
+```
 Output
 
-```
 nixmin@DESKTOP:~$ ./file_check.sh
 passwd file exists
 ```
@@ -253,10 +253,9 @@ then
 else
     echo "Thanks"
 ```
-
+```
 Output
 
-```
 nixmin@DESKTOP:~$ ./parameter_check.sh TestParameter
 Thanks
 ```
