@@ -10,13 +10,6 @@ nixmin@DESKTOP:~$ echo my_string
 my_string
 ```
 
-#### String 
-```
-
-
-
-```
-
 #### String Susbstition
 
 String substitution in Bash shell scripting is a powerful feature that allows you to manipulate strings in various ways. It includes replacing substrings, removing parts of strings, and extracting specific segments. 
