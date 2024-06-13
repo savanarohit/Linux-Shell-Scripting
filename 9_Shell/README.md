@@ -163,10 +163,7 @@ nixmin@DESKTOP:~$ set 's/apple/oragne/g' fruits.txt
 nixmin@DESKTOP:~$ cat /etc/passwd | awk -F ":" '{print $NF}'
 ```
 
-#### Local Variable 
-```
-#!/bin/bash
-# Script for local variables
+#### Local Variable
 hello() {
        name="Rohit"
        eho "$name"
