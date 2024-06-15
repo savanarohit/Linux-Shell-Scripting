@@ -10,7 +10,7 @@ nixmin@DESKTOP:~$ echo my_string
 my_string
 ```
 
-#### String Susbstition
+#### String Substitution
 
 String substitution in Bash shell scripting is a powerful feature that allows you to manipulate strings in various ways. It includes replacing substrings, removing parts of strings, and extracting specific segments. 
 
@@ -21,19 +21,19 @@ String substitution in Bash uses parameter expansion syntax to replace or extrac
 1) Substitution with ${variable/pattern/replacement}:
 
 ```
-Replaces the first occurrence of pattern with replacement.
+Replace the first occurrence of the pattern with replacement.
 Syntax: ${variable/pattern/replacement}
 ```
 
 2) Global Substitution with ${variable//pattern/replacement}:
 ```
-Replaces all occurrences of pattern with replacement.
+Replace all occurrences of pattern with replacement.
 Syntax: ${variable//pattern/replacement}
 ```
 
 3) Substitution at the Start of a String with ${variable/#pattern/replacement}:
 ```
-Replaces the pattern only if it matches the beginning of the string.
+Replace the pattern only if it matches the beginning of the string.
 Syntax: ${variable/#pattern/replacement}
 ```
 
