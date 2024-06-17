@@ -39,18 +39,18 @@ fi
 
 Output
 
-nixmin@DESKTOP:~/linux-shell-scripting/11_Flow_Control$ sudo ./log_file_archive.sh 
+nixmin@DESKTOP:~/$ sudo ./log_file_archive.sh 
 [sudo] password for nixmin: 
 Log file exists. Archiving statrted
 date: extra operand ‘%Y-%m-%d_%H-%M-%S’
 Try 'date --help' for more information.
 Log file archived completed.
 
-nixmin@DESKTOP:~/linux-shell-scripting/11_Flow_Control$ ls -l /opt/
+nixmin@DESKTOP:~/$ ls -l /opt/
 total 4
 drwxr-xr-x 2 root root 4096 Jun 17 16:33 archive
 
-nixmin@DESKTOP:~/linux-shell-scripting/11_Flow_Control$ ls -l /opt/archive/
+nixmin@DESKTOP:~/$ ls -l /opt/archive/
 total 0
 -rw-r----- 1 root adm 0 Jun 11 08:44 _access.log
 
