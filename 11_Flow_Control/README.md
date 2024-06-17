@@ -21,7 +21,7 @@ Real World Example - Check if the Log file exists and archive it if it does.
 
 ```
 #!/bin/bash
-#  Script to check if the Log file exists and archive it if it does.
+# Script to check if the Log file exists and archive it if it does.
 
 # Log File Path
 LOG_FILE_PATH="/var/log/apache2/access.log"
@@ -36,9 +36,10 @@ if [ -f "$LOG_FILE_PATH" ]; then
 else
     echo "Log file does not exist."
 fi
+```
 
 Output
-
+```
 nixmin@DESKTOP:~/$ sudo ./log_file_archive.sh 
 [sudo] password for nixmin: 
 Log file exists. Archiving statrted
@@ -53,8 +54,6 @@ drwxr-xr-x 2 root root 4096 Jun 17 16:33 archive
 nixmin@DESKTOP:~/$ ls -l /opt/archive/
 total 0
 -rw-r----- 1 root adm 0 Jun 11 08:44 _access.log
-
-
 ```
 
 
