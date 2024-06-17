@@ -70,3 +70,56 @@ while [ $count -le 5 ]; do
 done
 ```
 
+3) until Loops
+
+The until loop runs until a condition becomes true.
+
+Example
+```
+#!/bin/bash
+# until loop example
+
+count=1
+until [ $count -gt 5 ]; do
+    echo "Count: $count"
+    count=$((count + 1))
+done
+
+```
+
+
+#### Control Flow Commands
+
+1) break
+
+The break command exits the nearest enclosing loop.
+
+Example
+```
+#!/bin/bash
+# break example
+
+for i in {1..5}; do
+    if [ $i -eq 2 ]; then
+        break
+    fi
+    echo "Number: $i"
+done
+```
+
+2) continue
+
+The continue command skips remaining commands in the current loop iteration and starts the next iteration.
+
+Example
+```
+#!/bin/bash
+# continue example
+
+for in in {1..8}; do 
+    if [ $i -eq 7]; then
+        continue
+    fi
+    echo "Number: $i"
+done
+```
