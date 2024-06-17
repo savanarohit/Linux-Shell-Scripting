@@ -9,7 +9,6 @@ Flow control in Linux shell scripting involves guiding the execution flow of a s
 The if statement tests a condition. If true, it executes a specific block of code.
 
 Example
-
 ```
 if [ $age -ge 18 ]; then
     echo "You are eligible to vote."
@@ -23,6 +22,7 @@ fi
 
 The case statement matches a variable against multiple patterns and executes corresponding blocks of code.
 
+Example
 ```
 case $day in 
     "Monday")
@@ -35,6 +35,5 @@ case $day in
     echo "It's just another day."
     ;;
 esac    
-
 
 ```
