@@ -55,7 +55,7 @@ bin:x:2:2:bin:/bin:/usr/sbin/nologin
 sys:x:3:3:sys:/dev:/usr/sbin/nologin
 ```
 
-#### Example - transalate lowercase to uppercase
+#### Example - translate lowercase to uppercase
 ```
 nixmin@DESKTOP-GINCH92:~/linux-shell-scripting/5_AWK$ cat /etc/passwd | tr [:lower:] [:upper:]
 ROOT:X:0:0:ROOT:/ROOT:/BIN/BASH
