@@ -1,5 +1,5 @@
 #!/bin/bash
-#  Script to check if the Log file exists and archive it if it does.
+# Script to check if the Log file exists and archive it if it does.
 
 # Log File Path
 LOG_FILE_PATH="/opt/access.log"
