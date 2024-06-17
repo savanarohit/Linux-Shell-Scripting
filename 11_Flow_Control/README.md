@@ -52,6 +52,13 @@ for i in {1..5}; do
     echo "$i"
 done
 
+output
+
+1
+2
+3
+4
+5
 ```
 
 2) while loop
@@ -68,6 +75,14 @@ while [ $count -le 5 ]; do
 	echo "Count: $count"
 	count=$((count + 1))
 done
+
+output
+
+Count: 1
+Count: 2
+Count: 3
+Count: 4
+Count: 5
 ```
 
 3) until Loops
@@ -85,8 +100,14 @@ until [ $count -gt 5 ]; do
     count=$((count + 1))
 done
 
-```
+output
 
+Count: 1
+Count: 2
+Count: 3
+Count: 4
+Count: 5
+```
 
 #### Control Flow Commands
 
@@ -105,6 +126,12 @@ for i in {1..5}; do
     fi
     echo "Number: $i"
 done
+
+output
+
+Number: 1
+Number: 2
+Number: 3
 ```
 
 2) continue
@@ -122,4 +149,16 @@ for in in {1..8}; do
     fi
     echo "Number: $i"
 done
+
+output
+
+Number: 1
+Number: 2
+Number: 3
+Number: 4
+Number: 6
+Number: 7
+Number: 8
+Number: 9
+Number: 10
 ```
