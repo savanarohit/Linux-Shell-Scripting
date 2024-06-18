@@ -18,7 +18,6 @@ fi
 ```
 
 Real World Example - Check if the Log file exists and archive it if it does.
-
 ```
 #!/bin/bash
 # Script to check if the Log file exists and archive it if it does.
@@ -68,6 +67,77 @@ case $day in
     ;;
 esac    
 ```
+
+Real World Example - Script to manage a Service in Linux
+```
+#!/bin/bash
+# Script to manage a Service in Linux
+
+# Service name
+service_name="snapd"
+
+# Systemctl service command options
+echo "Enter you choice for service: start | stop | restart | status"
+
+read -r user_input
+
+case $user_input in 
+    start)
+        echo "Starting $service_name "
+        systemctl start $service_name
+        echo "$service_name started"
+        ;;
+    stop)
+        echo "Stoppig $service_name"
+        systemctl stop $service_name
+        echo "$service_name stopped"
+        ;;
+    restart)
+        echo "Restarting $service_name"
+        systemctl restart $service_name
+        echo "$service_name restarted"
+        ;;
+    status)
+        echo "Status of service $service_name"
+        systemctl status $service_name
+        ;;
+    *)
+        echo "Enter correct option: start , stop , restart , status "
+esac
+
+
+Output
+
+nixmin@DESKTOP:~/$ ./service.sh
+Enter you choice for service: start | stop | restart | status
+status
+
+Status of service snapd
+● snapd.service - Snap Daemon
+     Loaded: loaded (/lib/systemd/system/snapd.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2024-06-18 09:52:20 IST; 24min ago
+TriggeredBy: ● snapd.socket
+   Main PID: 241 (snapd)
+      Tasks: 14 (limit: 9464)
+     Memory: 80.0M
+     CGroup: /system.slice/snapd.service
+             └─241 /usr/lib/snapd/snapd
+
+Jun 18 09:52:14 DESKTOP-GINCH92 systemd[1]: Starting Snap Daemon...
+Jun 18 09:52:20 DESKTOP-GINCH92 snapd[241]: overlord.go:271: Acquiring state lock file
+lines 1-12...skipping...
+● snapd.service - Snap Daemon
+     Loaded: loaded (/lib/systemd/system/snapd.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2024-06-18 09:52:20 IST; 24min ago
+TriggeredBy: ● snapd.socket
+   Main PID: 241 (snapd)
+      Tasks: 14 (limit: 9464)
+     Memory: 80.0M
+     CGroup: /system.slice/snapd.service
+             └─241 /usr/lib/snapd/snapd
+```
+
+
 
 #### Looping Statements
 
