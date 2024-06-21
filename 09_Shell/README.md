@@ -1,18 +1,18 @@
 #### Linux Shell
 
-The Linux shell is a command-line interface (CLI) that allows users to interact with the operating system by typing commands. It provides a text-based way to communicate with the Linux kernel and manage system resources, run programs, and perform various tasks.
+The Linux shell is a command-line interface (CLI) that allows users to interact with the operating system by typing commands. It provides a text-based way to communicate with the Linux kernel, manage system resources, run programs, and perform various tasks.
 
 #### Key Components of the Linux Shell
 
-1) Command Interpreter: The shell acts as an intermediary between the user and the kernel. It interprets and executes the commands entered by the user.
+1) Command Interpreter: The shell is an intermediary between the user and the kernel. It interprets and executes the commands entered by the user.
 
-2) Environment: The shell maintains an environment that includes variables and configurations which can influence the behavior of the commands and programs run within the shell.
+2) Environment: The shell maintains an environment that includes variables and configurations that can influence the behavior of the commands and programs run within the shell.
 
 3) Scripting Language: Many shells support scripting, which allows users to write scripts (collections of commands) to automate tasks.
 
 #### Common Types of Linux Shells
 
-1) Bash (Bourne Again Shell): The default shell for many Linux distributions. It is an enhanced version of the original Bourne Shell (sh) and includes features like command-line editing, job control, and command history.
+1) Bash (Bourne Again Shell): The default shell for many Linux distributions. It is an enhanced version of the original Bourne Shell (sh), including command-line editing, job control, and command history.
 
 2) Zsh (Z Shell): Known for its powerful features like spell checking, improved auto-completions, and themes. It is highly customizable.
 
@@ -57,10 +57,10 @@ DESCRIPTION
        List  information  about the FILEs (the current directory by default).  Sort entries alphabetically if none of
        -cftuvSUX nor --sort is specified.
 
-       Mandatory arguments to long options are mandatory for short options too.
+       Mandatory arguments for long options are mandatory for short options too.
 
        -a, --all
-              do not ignore entries starting with .
+              do not ignore entries starting with.
 
        -A, --almost-all
               do not list implied . and ..
@@ -102,7 +102,7 @@ source
 pwd
 history
 
-#### How to List all the Built-in Commands
+#### How to List All the Built-in Commands
 
 Most shells provide a way to list all available built-in commands. For example:
 Bash: You can use the help command to list built-ins, or compgen -b to get a concise list of all built-ins.
@@ -133,7 +133,7 @@ nixmin@DESKTOP:~$ type df
 df is /usr/bin/df
 ```
 
-#### Predefined Linux Shell Varirables
+#### Predefined Linux Shell Variables
 ```
 nixmin@DESKTOP:~$ echo $SHELL
 /bin/bash
@@ -146,7 +146,7 @@ nixmin@DESKTOP:~$
 
 ```
 
-#### Linux Shell Environmen Variables
+#### Linux Shell Environment Variables
 ```
 nixmin@DESKTOP:~/linux-shell-scripting$ env
 SHELL=/bin/bash
@@ -170,7 +170,7 @@ nixmin@DESKTOP:~$ cat /etc/passwd | awk -F ":" '{print $NF}'
 
 hello() {
        name="Rohit"
-       eho "$name"
+       echo "$name"
 }
 ```
 
