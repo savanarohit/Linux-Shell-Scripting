@@ -137,8 +137,6 @@ TriggeredBy: ● snapd.socket
              └─241 /usr/lib/snapd/snapd
 ```
 
-
-
 #### Looping Statements
 
 1) for loop
@@ -163,13 +161,11 @@ output
 5
 ```
 
-Real World Example
+Real World Example - 
 
 ```
 #!/bin/bash
 # 
-
-
 
 
 
@@ -204,6 +200,18 @@ Count: 4
 Count: 5
 ```
 
+Real World Example - 
+
+```
+#!/bin/bash
+# 
+
+
+
+
+```
+
+
 3) until Loops
 
 The until loop runs until a condition becomes true.
@@ -226,6 +234,17 @@ Count: 2
 Count: 3
 Count: 4
 Count: 5
+```
+
+Real World Example - 
+
+```
+#!/bin/bash
+# 
+
+
+
+
 ```
 
 #### Control Flow Commands
@@ -251,6 +270,17 @@ output
 Number: 1
 Number: 2
 Number: 3
+```
+
+Real World Example - 
+
+```
+#!/bin/bash
+# 
+
+
+
+
 ```
 
 2) continue
@@ -280,4 +310,15 @@ Number: 7
 Number: 8
 Number: 9
 Number: 10
+```
+
+Real World Example - 
+
+```
+#!/bin/bash
+# 
+
+
+
+
 ```
