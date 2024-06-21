@@ -161,15 +161,43 @@ output
 5
 ```
 
-Real World Example - 
+Real World Example - Renaming All Files in a Directory
 
 ```
 #!/bin/bash
-# 
+# A Script for renaming all files in a directory
 
+# Dir
+dir="/opt/test"
 
+# updated files prefix
+prefix="updated_"
 
+# Change to Dir
+cd $dir
 
+# Using for loop to rename files with prefix
+for file in *; do
+    if [ -f "$file" ]; then
+        mv "$file" "${prefix}${file}"
+        echo "Renamed $file to ${prefix}${file}"
+    fi
+done
+
+Output
+
+nixmin@DESKTOP:~/$ sudo ./file_rename.sh 
+Renamed file1 to updated_file1
+Renamed file2 to updated_file2
+Renamed file3 to updated_file3
+Renamed file4 to updated_file4
+
+nixmin@DESKTOP:~/$ ls -l /opt/test/
+total 0
+-rw-r--r-- 1 nixmin nixmin 0 Jun 21 09:25 updated_file1
+-rw-r--r-- 1 nixmin nixmin 0 Jun 21 09:25 updated_file2
+-rw-r--r-- 1 nixmin nixmin 0 Jun 21 09:25 updated_file3
+-rw-r--r-- 1 nixmin nixmin 0 Jun 21 09:25 updated_file4
 ```
 
 
