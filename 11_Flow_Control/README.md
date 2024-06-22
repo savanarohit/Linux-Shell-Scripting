@@ -200,10 +200,6 @@ total 0
 -rw-r--r-- 1 nixmin nixmin 0 Jun 21 09:25 updated_file4
 ```
 
-
-
-
-
 2) while loop
 
 The while loop repeatedly executes a block of code as long as a given condition is true.
@@ -228,13 +224,48 @@ Count: 4
 Count: 5
 ```
 
-Real World Example - 
-
+Real World Example - Backup of log file to a dir
 ```
 #!/bin/bash
-# 
+# Script to backup log file to a backup dir
 
+# Log file
+log_file="/var/log/apache2/access.log"
+backup_dir="/opt/backup"
 
+# Create backup dir
+mkdir -p "$backup_dir"
+
+# Message
+echo "Backup for log files $log_file starts...."
+
+while true; do
+    if [ -f "$log_file" ]; then
+        echo "$(date): $log_file found. Processing it now..."
+        mv "$log_file" "$backup_dir/special_$(date +"%Y%m%d_%H%M%S").log"
+        echo "$(date): $log_file backup kept in $backup_dir"
+        break
+    else
+        echo "$(date): $log_file not found."
+
+    fi
+    sleep 10
+
+done
+
+echo "Log file backup completed"
+
+Output
+
+nixmin@DESKTOP:~/$ sudo ./log_file_processor.sh 
+Backup for log files /var/log/apache2/access.log starts....
+Sat Jun 22 10:30:32 IST 2024: /var/log/apache2/access.log found. Processing it now...
+Sat Jun 22 10:30:32 IST 2024: /var/log/apache2/access.log backup kept in /opt/backup
+Log file backup completed
+
+nixmin@DESKTOP:~/$ sudo ls -l /opt/backup/
+total 0
+-rw-r----- 1 root adm 0 Jun 11 08:44 special_20240622_103032.log
 
 
 ```
