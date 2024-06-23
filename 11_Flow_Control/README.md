@@ -321,9 +321,6 @@ echo "$(date): $service_name is now running!" >> "$log_file"
 
 echo "Finished monitoring. $service_name service is active."
 
-
-
-
 ```
 
 #### Control Flow Commands
