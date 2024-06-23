@@ -388,13 +388,44 @@ Number: 9
 Number: 10
 ```
 
-Real World Example - 
+Real World Example - Checking Service Status on Multiple Servers
 
 ```
 #!/bin/bash
-# 
+# Script to check services on multiple linux servers
+
+# Servers
+node=("node1.abc.com" "node2.abc.com" "node3.abc.com")
+
+# Service to check
+service="apache2"
+
+# Checking on each server
+for server in "$({node[@]}"; do
+    echo "Checking servers: $node"
+
+    # Check if the server is reachable
+    if ! ping -c 1 -W 1 "$node" &> /dev/null; then
+        echo "Server $node is down
+        continue 
+    fi
+
+    # Check the service
+    ssh "$nodes" "systemctl is-active --quiet $node"
+
+    if [ $? -eq 0 ]; then
+        echo "Service $service is up on $node"
+    else
+        echo "Service $service is down on $node"
+    fi
+
+done
 
 
+Output
 
-
+nixmin@DESKTOP:~/$ sudo ./service_check.sh 
+Checking nodes: node1.abc.com
+ping: $: Name or service not known
+Node node1.abc.com is down
 ```
