@@ -348,11 +348,11 @@ Number: 2
 Number: 3
 ```
 
-Real World Example - 
+Real World Example - Check Service status on multiple Linux Servers. If found service not working on a server exit
 
 ```
 #!/bin/bash
-# Script to check if a service is up or not on multiple Linux Servers and exit
+# Script to Check Service status on multiple Linux Servers. If found service not working on a server exit
 
 # Servers
 node=("node1.abc.com" "node2.abc.com" "node3.abc.com")
