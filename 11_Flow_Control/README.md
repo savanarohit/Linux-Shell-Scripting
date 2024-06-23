@@ -266,10 +266,7 @@ Log file backup completed
 nixmin@DESKTOP:~/$ sudo ls -l /opt/backup/
 total 0
 -rw-r----- 1 root adm 0 Jun 11 08:44 special_20240622_103032.log
-
-
 ```
-
 
 3) until Loops
 
@@ -295,11 +292,34 @@ Count: 4
 Count: 5
 ```
 
-Real World Example - 
+Real World Example - Service monitoring in linux
 
 ```
 #!/bin/bash
-# 
+# Script to check if nginx service is running
+
+# Name of the service to check
+service_name="nginx"
+
+# Log file
+log_file="/var/log/service_monitor.log"
+
+# Function to check service status
+check_service() {
+    systemctl is-active --quiet "$service_name"
+}
+
+echo "Monitoring for $service_name service to start..." >> "$log_file"
+
+# Using 'until' loop to check service status
+until check_service; do
+    echo "$(date): $service_name is not running. Checking again in 10 seconds..." >> "$log_file"
+    sleep 10
+done
+
+echo "$(date): $service_name is now running!" >> "$log_file"
+
+echo "Finished monitoring. $service_name service is active."
 
 
 
