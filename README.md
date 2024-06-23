@@ -1,7 +1,7 @@
 ### Linux Shell Scripting Lessons Index
 
-Part01)<a hrer="https://medium.com/@savanarohit/linux-shell-basic-be924d7650df">Introduction</a>
-Part02)
+Part01)
+Part02) 
 Part03)
 Part04)
 Part05)
@@ -12,7 +12,7 @@ Part09)
 Part10)
 Part11)
 
-
+ 
 
 ### Linux Shell Scripting Basics
 
