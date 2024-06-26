@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-### Linux Shell Scripting Lessons Index
-
-Part01)
-Part02) 
-Part03)
-Part04)
-Part05)
-Part06)
-Part07)
-Part08)
-Part09)
-Part10)
-Part11)
-
- 
-
-=======
->>>>>>> cc666d73238dcd32a275a38dc7ed2953a6d09a3c
 ### Linux Shell Scripting Basics
 
 Linux shell scripting is a way to automate tasks in the Unix/Linux environment. A shell script is a text file containing a sequence of commands for a Unix-based operating system's shell to execute. Shell scripting is a powerful tool for automating tasks in a Linux environment. Using variables, control flow, functions, and input/output redirection, you can create scripts to perform a wide range of tasks efficiently. Always start your scripts with a shebang to specify the interpreter, and use comments to document your code for better readability and maintenance.
