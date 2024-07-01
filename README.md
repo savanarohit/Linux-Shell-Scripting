@@ -64,7 +64,6 @@ echo "User $username has been created."
 6) Set the Password: echo "$username:$password" | chpasswd sets the password for the new user.
 7) Add to Group: usermod -aG "$group" "$username" adds the user to the specified group if one was provided.
 
-This script is a simple way to create new users in Ubuntu. For more advanced user management, you might want to add additional error checking and handling.
 
 
 
